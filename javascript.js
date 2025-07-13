@@ -32,7 +32,10 @@ test: function(){
 let playerOne ={    
     putAnX: function(arrayIndex){
         // Access the gamboardArray in the gameBoardObject through playerOne 
-       console.log('this works: ' + gameBoardObject.gameBoardArray[1])
+    //    console.log('this works: ' + gameBoardObject.gameBoardArray[1])
+       if (gameBoardObject.gameBoardArray[arrayIndex]==''){
+        gameBoardObject.gameBoardArray[arrayIndex] = 'X'
+       }
     }
 }
 
