@@ -28,25 +28,11 @@ test: function(){
 
 
 // Step 2: Player Objects 
-
-// factory function to create players (used this syntax): https://www.geeksforgeeks.org/javascript/what-are-factory-functions-in-javascript/# 
-
-function createPlayer(name) {
-    return {
-        name: name,
-        sayHi: function(){
-            console.log(`${name} says hello`)
-        }
-        // This was to see if I could access the array inside the gameboardObject. It seems to work! 
-        // currentBoard: function () {
-        //     console.log('Here is what the current board looks like: ' + gameBoardObject.test());
-        // }
-    };
+// Player one has the ability to put an X. 
+let playerOne ={    
+    putAnX: function(arrayIndex){
+        
+    }
 }
-
-const playerOne = createPlayer('playerOne');
-
-
-const playerTwo = createPlayer('playerTwo');
 
 // Step 3: Game Flow (who goes next? Maybe can use boolean variable; if player 1 goes, then flip booleanVar to false; when false, it's player 2's turn.)
