@@ -14,7 +14,7 @@ const gameBoardObject = {
     // Making a 2D array: https://www.geeksforgeeks.org/javascript/javascript-2d-array/
     // However, I just made 1 array.
  gameBoardArray: 
-    ['x', '', '',
+    ['', 'A', '',
     '', '', '',
     '', '', ''],
 
@@ -31,7 +31,8 @@ test: function(){
 // Player one has the ability to put an X. 
 let playerOne ={    
     putAnX: function(arrayIndex){
-        
+        // Access the gamboardArray in the gameBoardObject through playerOne 
+       console.log('this works: ' + gameBoardObject.gameBoardArray[1])
     }
 }
 
