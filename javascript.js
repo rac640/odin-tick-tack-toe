@@ -34,8 +34,14 @@ let playerOne ={
     putAnX: function(arrayIndex){
         // Access the gamboardArray in the gameBoardObject through playerOne 
     //    console.log('this works: ' + gameBoardObject.gameBoardArray[1])
-       if (gameBoardObject.gameBoardArray[arrayIndex]==''){
-        gameBoardObject.gameBoardArray[arrayIndex] = 'X'
+    // if the board is empty and it is player 1's turn, then put an X. Then, turn it onto P2's turn. 
+
+       if (gameBoardObject.gameBoardArray[arrayIndex]=='' && this.turnP1==true){
+            gameBoardObject.gameBoardArray[arrayIndex] = 'X'
+            this.turnP1= false;
+            playerTwo.turnP2= true;
+            console.log(`Now it is player 2's turn!`);
+
        }
        else{
         console.log('Choose another one')
@@ -43,7 +49,14 @@ let playerOne ={
     }
 }
 
-
+function playerTwoTurn(){
+    if(playerTwo.turnP2==false){
+        console.log('Not player two turn yet')
+    }
+    else{
+        console.log('It is player two turn')
+    }
+}
 
 // Did same thing as playerOne (access gameboardArray, and change the index from blank to O)
 let playerTwo = {
@@ -62,7 +75,8 @@ let playerTwo = {
 
 const gameFlow = {
     // If it's player one's turn, then player two should not go. 
-    // How to determine if 
+    // How to determine if player one went already? 
+    // If turnP1 is true AND..., then put the...and then switch to player 2 turn. 
 
     // If it's player two's turn, then player one should not go. 
 
