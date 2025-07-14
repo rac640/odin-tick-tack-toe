@@ -30,13 +30,39 @@ test: function(){
 // Step 2: Player Objects 
 // Player one has the ability to put an X. 
 let playerOne ={    
+    turnP1: true, 
     putAnX: function(arrayIndex){
         // Access the gamboardArray in the gameBoardObject through playerOne 
     //    console.log('this works: ' + gameBoardObject.gameBoardArray[1])
        if (gameBoardObject.gameBoardArray[arrayIndex]==''){
         gameBoardObject.gameBoardArray[arrayIndex] = 'X'
        }
+       else{
+        console.log('Choose another one')
+       }
+    }
+}
+
+
+
+// Did same thing as playerOne (access gameboardArray, and change the index from blank to O)
+let playerTwo = {
+    turnP2: false, 
+    putAnO: function(arrayIndex){
+    if (gameBoardObject.gameBoardArray[arrayIndex]==''){
+        gameBoardObject.gameBoardArray[arrayIndex] = 'O'
+       }
+       else{
+        console.log('Choose another one')
+       }
     }
 }
 
 // Step 3: Game Flow (who goes next? Maybe can use boolean variable; if player 1 goes, then flip booleanVar to false; when false, it's player 2's turn.)
+
+const gameFlow = {
+    // Start with playerOne, they will go first. 
+playerOneTurn: true ,
+// 
+
+}
