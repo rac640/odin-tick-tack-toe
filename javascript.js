@@ -5,7 +5,7 @@
 // are also going to be stored in objects, and you’re probably going 
 // to want an object to control the flow of the game itself.
 
-// Current Step: Step 3 
+// Current Step: Step 3 (figuring out player turns)
 
 // Step1 : Create gameboard object and put GameBoardArray into it. 
 
@@ -61,8 +61,11 @@ let playerTwo = {
 // Step 3: Game Flow (who goes next? Maybe can use boolean variable; if player 1 goes, then flip booleanVar to false; when false, it's player 2's turn.)
 
 const gameFlow = {
-    // Start with playerOne, they will go first. 
-playerOneTurn: true ,
-// 
+    // If it's player one's turn, then player two should not go. 
+    // How to determine if 
+
+    // If it's player two's turn, then player one should not go. 
+
+
 
 }
