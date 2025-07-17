@@ -13,12 +13,11 @@ const gameBoardObject = {
 
     // Making a 2D array: https://www.geeksforgeeks.org/javascript/javascript-2d-array/
     // However, I just made 1 array.
+
  gameBoardArray: 
     ['X', 'X', '',
     '', '', '',
     '', '', ''],
-
-
 
 
 };
@@ -80,8 +79,3 @@ let playerTwo = {
 
 // If the gameboard looks like X, then print Y. 
 // Question: How would we continuously check? 
-
-
-if (gameBoardObject.gameBoardArray==['X', 'X', 'X','', '', '','', '', '']){
-        console.log("Player 1 won!")
-    }
