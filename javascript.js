@@ -61,8 +61,10 @@ function playerTwoTurn(){
 
 // Did same thing as playerOne (access gameboardArray, and change the index from blank to O)
 let playerTwo = {
+    // Included the boolean turnP2 (this will determine whether player 2 should go or not)
     turnP2: false, 
     putAnO: function(arrayIndex){
+        // If the gameboard is empty and it is player 2's turn, then put an O, turn P2's turn off, and turn P1's turn on. 
     if (gameBoardObject.gameBoardArray[arrayIndex]=='' && this.turnP2==true){
         gameBoardObject.gameBoardArray[arrayIndex] = 'O'
         this.turnP2=false;
@@ -77,12 +79,6 @@ let playerTwo = {
 // Step 3: Game Flow (who goes next? Maybe can use boolean variable; if player 1 goes, then flip booleanVar to false; when false, it's player 2's turn.)
 
 const gameFlow = {
-    // If it's player one's turn, then player two should not go. 
-    // How to determine if player one went already? 
-    // If turnP1 is true AND..., then put the...and then switch to player 2 turn. 
-
-    // If it's player two's turn, then player one should not go. 
-
 
 
 }
