@@ -5,7 +5,7 @@
 // are also going to be stored in objects, and you’re probably going 
 // to want an object to control the flow of the game itself.
 
-// Current Step: Step 3 (figuring out player turns)
+// Current Step: Step 3 (Winning rounds logic) 
 
 // Step1 : Create gameboard object and put GameBoardArray into it. 
 
@@ -49,14 +49,16 @@ let playerOne ={
     }
 }
 
-function playerTwoTurn(){
-    if(playerTwo.turnP2==false){
-        console.log('Not player two turn yet')
-    }
-    else{
-        console.log('It is player two turn')
-    }
-}
+
+// This was a test to see if the boolean turnP2 worked. 
+// function playerTwoTurn(){
+//     if(playerTwo.turnP2==false){
+//         console.log('Not player two turn yet')
+//     }
+//     else{
+//         console.log('It is player two turn')
+//     }
+// }
 
 
 // Did same thing as playerOne (access gameboardArray, and change the index from blank to O)
@@ -76,9 +78,15 @@ let playerTwo = {
     }
 }
 
-// Step 3: Game Flow (who goes next? Maybe can use boolean variable; if player 1 goes, then flip booleanVar to false; when false, it's player 2's turn.)
+// Step 3: Winning Rounds Logic 
 
-const gameFlow = {
+// If the gameboard looks like X, then print Y. 
+// Question: How would we continuously check? 
 
+let winningOptions = {
+    // If the gameboard array is XXX, then print player one won. 
+    playerOneWon: function(){
+
+    }
 
 }
