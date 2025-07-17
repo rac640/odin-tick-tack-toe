@@ -83,10 +83,12 @@ let playerTwo = {
 // If the gameboard looks like X, then print Y. 
 // Question: How would we continuously check? 
 
-let winningOptions = {
+let winAndTieOptions = {
     // If the gameboard array is XXX, then print player one won. 
     playerOneWon: function(){
 
     }
+
+    
 
 }
