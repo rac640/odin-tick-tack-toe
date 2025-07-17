@@ -58,12 +58,15 @@ function playerTwoTurn(){
     }
 }
 
+
 // Did same thing as playerOne (access gameboardArray, and change the index from blank to O)
 let playerTwo = {
     turnP2: false, 
     putAnO: function(arrayIndex){
-    if (gameBoardObject.gameBoardArray[arrayIndex]==''){
+    if (gameBoardObject.gameBoardArray[arrayIndex]=='' && this.turnP2==true){
         gameBoardObject.gameBoardArray[arrayIndex] = 'O'
+        this.turnP2=false;
+        playerOne.turnP1=true;
        }
        else{
         console.log('Choose another one')
