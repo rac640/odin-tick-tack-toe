@@ -14,14 +14,12 @@ const gameBoardObject = {
     // Making a 2D array: https://www.geeksforgeeks.org/javascript/javascript-2d-array/
     // However, I just made 1 array.
  gameBoardArray: 
-    ['', 'A', '',
+    ['X', 'X', '',
     '', '', '',
     '', '', ''],
 
-    // Step 1.5 Creating a method for the gamBoard: Return the gameBoardArray (test: is gameBoardArray an array type?)
-test: function(){
-    return this.gameBoardArray;
-},
+
+
 
 };
 
@@ -83,12 +81,7 @@ let playerTwo = {
 // If the gameboard looks like X, then print Y. 
 // Question: How would we continuously check? 
 
-let winAndTieOptions = {
-    // If the gameboard array is XXX, then print player one won. 
-    playerOneWon: function(){
 
+if (gameBoardObject.gameBoardArray==['X', 'X', 'X','', '', '','', '', '']){
+        console.log("Player 1 won!")
     }
-
-    
-
-}
