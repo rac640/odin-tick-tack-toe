@@ -19,6 +19,8 @@ const gameBoardObject = {
     '', '', '',
     '', '', ''],
 
+    
+
 
 };
 
@@ -79,3 +81,19 @@ let playerTwo = {
 
 // If the gameboard looks like X, then print Y. 
 // Question: How would we continuously check? 
+
+// Put in IIFE? 
+
+// Put in Gameboard? 
+
+
+  const winnerChecker = {
+  checker: (function(){
+    if (gameBoardObject.gameBoardArray[0]=='X'
+    && gameBoardObject.gameBoardArray[1] =='X'&&
+    gameBoardObject.gameBoardArray[2] =='X'){
+        console.log("Winner!")
+    }})
+  }
+
+  winnerChecker.checker()
