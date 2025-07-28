@@ -6,8 +6,7 @@
 // to want an object to control the flow of the game itself.
 
 // Current Step: Step 3 (Winning rounds logic) 
-
-// Step1 : Create gameboard object and put GameBoardArray into it. 
+// To test for next time: Putting winnerChecker logic in gameBoardArray
 
 const gameBoardObject = {
 
@@ -93,7 +92,10 @@ let playerTwo = {
     && gameBoardObject.gameBoardArray[1] =='X'&&
     gameBoardObject.gameBoardArray[2] =='X'){
         console.log("Winner!")
-    }})
+    }
+    else{console.log("No winner!")}
+})
+    
   }
 
-  winnerChecker.checker()
+winnerChecker.checker()
