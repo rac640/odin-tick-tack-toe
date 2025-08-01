@@ -18,11 +18,21 @@ const gameBoardObject = {
     '', '', '',
     '', '', ''],
 
+     winnerChecker : (function(){
+    if (gameBoardObject.gameBoardArray[0]=='X'
+    && gameBoardObject.gameBoardArray[1] =='X'&&
+    gameBoardObject.gameBoardArray[2] =='X'){
+        console.log("Winner!")
+    }
+    else{console.log("No winner!")}
+})
     
 
 
 };
 
+
+gameBoardObject.winnerChecker();
 
 
 // Step 2: Player Objects 
@@ -86,16 +96,6 @@ let playerTwo = {
 // Put in Gameboard? 
 
 
-  const winnerChecker = {
-  checker: (function(){
-    if (gameBoardObject.gameBoardArray[0]=='X'
-    && gameBoardObject.gameBoardArray[1] =='X'&&
-    gameBoardObject.gameBoardArray[2] =='X'){
-        console.log("Winner!")
-    }
-    else{console.log("No winner!")}
-})
-    
-  }
+
 
 winnerChecker.checker()
