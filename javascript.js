@@ -18,11 +18,11 @@ const gameBoardObject = {
     '', '', '',
     '', '', ''],
 
-     winnerChecker : (function(){
+     playerOneWin : (function(){
     if (gameBoardObject.gameBoardArray[0]=='X'
     && gameBoardObject.gameBoardArray[1] =='X'&&
     gameBoardObject.gameBoardArray[2] =='X'){
-        console.log("Winner!")
+        console.log("player One Wins!")
     }
     else{console.log("No winner!")}
 })
@@ -31,8 +31,8 @@ const gameBoardObject = {
 
 };
 
+// Might need to use a while loop (While gameboardArray doesn't )
 
-gameBoardObject.winnerChecker();
 
 
 // Step 2: Player Objects 
@@ -91,11 +91,8 @@ let playerTwo = {
 // If the gameboard looks like X, then print Y. 
 // Question: How would we continuously check? 
 
-// Put in IIFE? 
-
-// Put in Gameboard? 
 
 
 
 
-winnerChecker.checker()
+
