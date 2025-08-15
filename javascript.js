@@ -5,8 +5,8 @@
 // are also going to be stored in objects, and you’re probably going 
 // to want an object to control the flow of the game itself.
 
-// Current Step: Step 3 (Winning rounds logic) 
-// To test for next time: Putting winnerChecker logic in gameBoardArray
+// Current Step: Step 3 (Winning rounds logic, specifically for Player 1) 
+// Problem: When I put another X, it doesn't say "Player 1 "
 
 const gameBoardObject = {
 
@@ -31,7 +31,6 @@ const gameBoardObject = {
 
 };
 
-// Might need to use a while loop (While gameboardArray doesn't )
 
 
 
