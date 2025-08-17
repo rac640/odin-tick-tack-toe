@@ -26,12 +26,11 @@ const gameBoardObject = {
     }
     else{console.log("No winner!")}
 })
-    
 
 
 };
 
-
+gameBoardObject.playerOneWin()
 
 
 // Step 2: Player Objects 
