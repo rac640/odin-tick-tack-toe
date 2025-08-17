@@ -30,7 +30,12 @@ const gameBoardObject = {
 
 };
 
-gameBoardObject.playerOneWin()
+playerPutMark = true;
+while (playerPutMark==true)
+    {
+        gameBoardObject.playerOneWin()
+        playerPutMark = false
+    }
 
 
 // Step 2: Player Objects 
