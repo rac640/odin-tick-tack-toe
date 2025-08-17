@@ -6,7 +6,7 @@
 // to want an object to control the flow of the game itself.
 
 // Current Step: Step 3 (Winning rounds logic, specifically for Player 1) 
-// Problem: When I put another X, it doesn't say "Player 1 Wins"
+// In progress: Getting the playerOneWin method to keep running (Should show "No winner!"until player one wins.) 
 
 const gameBoardObject = {
 
