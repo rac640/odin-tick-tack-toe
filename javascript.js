@@ -17,19 +17,25 @@ const gameBoardObject = {
     ['X', 'X', '',
     '', '', '',
     '', '', ''],
+P1WinVar: false, 
 
      playerOneWin : (function(){
     if (gameBoardObject.gameBoardArray[0]=='X'
     && gameBoardObject.gameBoardArray[1] =='X'&&
     gameBoardObject.gameBoardArray[2] =='X'){
-        console.log("player One Wins!")
+        P1WinVar = true; 
     }
 })
 
 
-// If player 1 wins, then stop the program running. 
 
 };
+
+// If the P1WinVar = true, then execute this. 
+if (gameBoardObject.P1WinVar = true)
+    {
+        console.log("Player 1 wins!")
+    }
 
 playerPutMark = true;
 while (playerPutMark==true)
