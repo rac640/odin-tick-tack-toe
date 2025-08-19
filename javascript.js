@@ -24,9 +24,10 @@ const gameBoardObject = {
     gameBoardObject.gameBoardArray[2] =='X'){
         console.log("player One Wins!")
     }
-    else{console.log("No winner!")}
 })
 
+
+// If player 1 wins, then stop the program running. 
 
 };
 
