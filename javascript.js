@@ -32,7 +32,7 @@ P1WinVar: false,
 };
 
 // If the P1WinVar = true, then execute this. 
-if (gameBoardObject.P1WinVar = true)
+if (gameBoardObject.P1WinVar = false)
     {
         console.log("Player 1 wins!")
     }
