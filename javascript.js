@@ -6,8 +6,7 @@
 // to want an object to control the flow of the game itself.
 
 // Current Step: Step 3 (Winning rounds logic, specifically for Player 1) 
-// In progress: Getting the playerOneWin method to keep running (Should show "No winner!"until player one wins.) 
-
+// To do: make a WinningArgumentsObj object, with the winning arguments (only player 1 for now)
 const gameBoardObject = {
 
     // Making a 2D array: https://www.geeksforgeeks.org/javascript/javascript-2d-array/
