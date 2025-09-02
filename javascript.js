@@ -19,8 +19,11 @@ const player1 = {
  name: "Player 1"
 };
 
-const player2={
+const player2 ={
 name: "Player 2"
 };
 
 
+const gameFlow ={
+    
+}
