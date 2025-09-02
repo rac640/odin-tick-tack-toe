@@ -1,3 +1,5 @@
+// current step: Show "Winner!" when there are 3 Xs in a row. First, create a resultObject (P1 win = true, p2 win = true, tie = true)
+
 
 // You’re going to store the gameboard as an array inside of a Gameboard object, so start there! 
 const gameBoardObject = {
@@ -28,6 +30,8 @@ player2turn: false
 };
 
 
+
+// To put in gameflow: turns 
 
 const gameFlow ={
 putAnX: function(arrayIndex){
