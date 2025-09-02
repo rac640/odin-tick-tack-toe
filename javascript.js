@@ -35,8 +35,7 @@ player2turn: false
 
 const gameFlow ={
 putAnX: function(arrayIndex){
-        // Access the gamboardArray in the gameBoardObject through playerOne 
-    //    console.log('this works: ' + gameBoardObject.gameBoardArray[1])
+
     // if the board is empty and it is player 1's turn, then put an X. Then, turn it onto P2's turn. 
 
        if (gameBoardObject.gameBoardArray[arrayIndex]=='' && player1.player1turn==true){
