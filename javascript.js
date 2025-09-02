@@ -8,6 +8,8 @@ const gameBoardObject = {
     ['X', 'X', '',
     '', '', '',
     '', '', ''],
+
+
 };
 
 
@@ -16,18 +18,33 @@ const gameBoardObject = {
 
 // creating basic player objects: https://connect.wowlazy.com/#basic-player-object-example
 const player1 = {
- name: "Player 1"
+ name: "Player 1",
+ player1turn: true 
 };
 
 const player2 ={
-name: "Player 2"
+name: "Player 2",
+player2turn: false 
 };
 
 
-const gameFlow ={
-    // Start with player 1's turn 
-    console.log("It's player 1's turn!")
 
+const gameFlow ={
+putAnX: function(arrayIndex){
+        // Access the gamboardArray in the gameBoardObject through playerOne 
+    //    console.log('this works: ' + gameBoardObject.gameBoardArray[1])
+    // if the board is empty and it is player 1's turn, then put an X. Then, turn it onto P2's turn. 
+
+       if (gameBoardObject.gameBoardArray[arrayIndex]=='' && player1.player1turn==true){
+            gameBoardObject.gameBoardArray[arrayIndex] = 'X'
+            player1.player1turn= false;
+            player2.player2turn= true;
+            console.log(`Now it is player 2's turn!`);
+
+       }
 
     
+}
+
+
 }
