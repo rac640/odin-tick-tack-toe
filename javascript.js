@@ -25,5 +25,9 @@ name: "Player 2"
 
 
 const gameFlow ={
+    // Start with player 1's turn 
+    console.log("It's player 1's turn!")
+
+
     
 }
