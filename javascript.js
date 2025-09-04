@@ -7,7 +7,7 @@ const gameBoardObject = {
     // Making a 2D array: https://www.geeksforgeeks.org/javascript/javascript-2d-array/
 
  gameBoardArray: 
-    ['X', 'X', '',
+    ['', 'X', '',
     '', '', '',
     '', '', ''],
 
@@ -61,4 +61,22 @@ if (gameBoardObject.gameBoardArray[arrayIndex]=='' && player2.player2turn==true)
 }
 
 
+
 }
+
+
+const resultObject = {
+
+    // If 3 X's in a row, then put "Player 1 wins!"
+
+    p1Win: function(){
+        if (gameBoardObject.gameBoardArray[0]=='X'){
+            console.log("P1 Wins!");
+        }
+        else{
+            console.log("No player yet!")
+        }
+    }
+}
+
+
