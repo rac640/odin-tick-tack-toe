@@ -46,7 +46,18 @@ putAnX: function(arrayIndex){
 
        }
 
+
     
+}
+,
+putAnO: function(arrayIndex){
+if (gameBoardObject.gameBoardArray[arrayIndex]=='' && player2.player2turn==true){
+            gameBoardObject.gameBoardArray[arrayIndex] = 'O'
+            player1.player1turn= true;
+            player2.player2turn= false;
+            console.log(`Now it is player 1's turn!`);
+
+       }
 }
 
 
