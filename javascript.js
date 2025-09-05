@@ -70,7 +70,9 @@ const resultObject = {
     // If 3 X's in a row, then put "Player 1 wins!"
 
     p1Win: function(){
-        if (gameBoardObject.gameBoardArray[0]=='X'){
+        if (gameBoardObject.gameBoardArray[0]=='X' && gameBoardObject.gameBoardArray[1]=='X' && gameBoardObject.gameBoardArray[2]=='X'
+
+        ){
             console.log("P1 Wins!");
         }
         else{
