@@ -33,6 +33,8 @@ player2turn: false
 
 // To put in gameflow: turns 
 
+// When to end game and restart 
+
 const gameFlow ={
 putAnX: function(arrayIndex){
 
@@ -44,6 +46,9 @@ putAnX: function(arrayIndex){
             player2.player2turn= true;
             console.log(`Now it is player 2's turn!`);
 
+       }
+       else{
+        console.log("Invalid!")
        }
 
 
@@ -58,6 +63,14 @@ if (gameBoardObject.gameBoardArray[arrayIndex]=='' && player2.player2turn==true)
             console.log(`Now it is player 1's turn!`);
 
        }
+
+else{
+    console.log("Invalid!")
+
+}
+
+       
+       
 }
 
 
@@ -80,5 +93,9 @@ const resultObject = {
         }
     }
 }
+
+
+
+
 
 
