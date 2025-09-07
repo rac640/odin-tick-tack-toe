@@ -84,6 +84,11 @@ const resultObject = {
                (gameBoardObject.gameBoardArray[0]=='X' && gameBoardObject.gameBoardArray[1]=='X' && gameBoardObject.gameBoardArray[2]=='X')
             || (gameBoardObject.gameBoardArray[0]=='X' && gameBoardObject.gameBoardArray[3]=='X' && gameBoardObject.gameBoardArray[6]=='X')
             || (gameBoardObject.gameBoardArray[1]=='X' && gameBoardObject.gameBoardArray[4]=='X' && gameBoardObject.gameBoardArray[7]=='X')
+            || (gameBoardObject.gameBoardArray[2]=='X' && gameBoardObject.gameBoardArray[5]=='X' && gameBoardObject.gameBoardArray[8]=='X')
+            || (gameBoardObject.gameBoardArray[3]=='X' && gameBoardObject.gameBoardArray[4]=='X' && gameBoardObject.gameBoardArray[5]=='X')
+            || (gameBoardObject.gameBoardArray[4]=='X' && gameBoardObject.gameBoardArray[2]=='X' && gameBoardObject.gameBoardArray[6]=='X')
+            || (gameBoardObject.gameBoardArray[6]=='X' && gameBoardObject.gameBoardArray[7]=='X' && gameBoardObject.gameBoardArray[8]=='X')
+            || (gameBoardObject.gameBoardArray[8]=='X' && gameBoardObject.gameBoardArray[4]=='X' && gameBoardObject.gameBoardArray[0]=='X')
         ){
             console.log("P1 Wins!");
         }
