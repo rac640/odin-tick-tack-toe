@@ -95,6 +95,27 @@ const resultObject = {
         else{
             console.log("No player yet!")
         }
+    }),
+
+    p2Win:(function(){
+
+         if (
+               (gameBoardObject.gameBoardArray[0]=='O' && gameBoardObject.gameBoardArray[1]=='O' && gameBoardObject.gameBoardArray[2]=='O')
+            || (gameBoardObject.gameBoardArray[0]=='O' && gameBoardObject.gameBoardArray[3]=='O' && gameBoardObject.gameBoardArray[6]=='O')
+            || (gameBoardObject.gameBoardArray[1]=='O' && gameBoardObject.gameBoardArray[4]=='O' && gameBoardObject.gameBoardArray[7]=='O')
+            || (gameBoardObject.gameBoardArray[2]=='O' && gameBoardObject.gameBoardArray[5]=='O' && gameBoardObject.gameBoardArray[8]=='O')
+            || (gameBoardObject.gameBoardArray[3]=='O' && gameBoardObject.gameBoardArray[4]=='O' && gameBoardObject.gameBoardArray[5]=='O')
+            || (gameBoardObject.gameBoardArray[4]=='O' && gameBoardObject.gameBoardArray[2]=='O' && gameBoardObject.gameBoardArray[6]=='O')
+            || (gameBoardObject.gameBoardArray[6]=='O' && gameBoardObject.gameBoardArray[7]=='O' && gameBoardObject.gameBoardArray[8]=='O')
+            || (gameBoardObject.gameBoardArray[8]=='O' && gameBoardObject.gameBoardArray[4]=='O' && gameBoardObject.gameBoardArray[0]=='O')
+        ){
+            console.log("P2 Wins!");
+        }
+        else{
+            console.log("No player yet!")
+        }
+
+
     })
 }
 
