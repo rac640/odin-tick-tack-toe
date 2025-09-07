@@ -8,8 +8,8 @@ const gameBoardObject = {
 
  gameBoardArray: 
     ['', 'X', '',
-    '', '', '',
-    '', '', ''],
+    '', 'X', '',
+    '', 'X', ''],
 
 
 };
@@ -65,11 +65,7 @@ if (gameBoardObject.gameBoardArray[arrayIndex]=='' && player2.player2turn==true)
        }
 
 else{
-    console.log("Invalid!")
-
-}
-
-       
+    console.log("Invalid!")}
        
 }
 
@@ -82,20 +78,23 @@ const resultObject = {
 
     // If 3 X's in a row, then put "Player 1 wins!"
 
-    p1Win: function(){
-        if (gameBoardObject.gameBoardArray[0]=='X' && gameBoardObject.gameBoardArray[1]=='X' && gameBoardObject.gameBoardArray[2]=='X'
-
+    p1Win: (function(){
+        // Here are the combinations for P1 to win. 
+        if (
+               (gameBoardObject.gameBoardArray[0]=='X' && gameBoardObject.gameBoardArray[1]=='X' && gameBoardObject.gameBoardArray[2]=='X')
+            || (gameBoardObject.gameBoardArray[0]=='X' && gameBoardObject.gameBoardArray[3]=='X' && gameBoardObject.gameBoardArray[6]=='X')
+            || (gameBoardObject.gameBoardArray[1]=='X' && gameBoardObject.gameBoardArray[4]=='X' && gameBoardObject.gameBoardArray[7]=='X')
         ){
             console.log("P1 Wins!");
         }
         else{
             console.log("No player yet!")
         }
-    }
+    })
 }
 
 
 
 
 
-
+resultObject.p1Win();
