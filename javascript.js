@@ -123,8 +123,20 @@ const resultObject = {
     // if gameboardarray[0,1,2,...8] look like [O,X,X,....], then it should print 'tie!'
     // Need to find a way to group the array indexes together; instead of writing gameboardobject.gameboardarray[0], gameboardobject.gameboardarray[2], etc.
     // Idea: for loop? 
+
+    tieResult: (function(){
+    })
 }
 
+
+
+
+// Testing out to see if object value equals array 
+
+
+console.log(gameBoardObject.gameBoardArray== ['', 'X', '',
+    '', 'X', '',
+    '', 'X', ''])
 
 
 
