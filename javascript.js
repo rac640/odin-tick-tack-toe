@@ -116,7 +116,13 @@ const resultObject = {
         }
 
 
-    })
+    }),
+
+    // All ties in tic-tac-toe: https://codegolf.stackexchange.com/questions/249941/all-possible-ties-in-tic-tac-toe 
+    // If the gameboard looks a certain way, then it should print 'tie!'
+    // if gameboardarray[0,1,2,...8] look like [O,X,X,....], then it should print 'tie!'
+    // Need to find a way to group the array indexes together; instead of writing gameboardobject.gameboardarray[0], gameboardobject.gameboardarray[2], etc.
+    // Idea: for loop? 
 }
 
 
