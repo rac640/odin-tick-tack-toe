@@ -131,7 +131,12 @@ const resultObject = {
 
 
 
-// Testing out to see if object value equals array 
+// Testing out to see if object value  equals array. It doesn't, because the type (object vs array)
+// Possible solution: use For Loop and put the object values into an array. Then, compare this array to how a tied result should look. 
+
+
+console.log(gameBoardObject.gameBoardArray.length)
+// for (let x = 0; x++)
 
 
 console.log(gameBoardObject.gameBoardArray== ['', 'X', '',
