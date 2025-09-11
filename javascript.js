@@ -137,23 +137,33 @@ const resultObject = {
 
 newGameBoardArray = [];
 
-// Put these values in the newGameBoardArray. Next, put: if newGameBoardArray looks like [X,O,X,...] or newGameBoardArray looks like [X,X,O,...], then call it a tie.
+// Put these values in the newGameBoardArray. 
 for (let x = 0; x < gameBoardObject.gameBoardArray.length ; x++){
     // console.log("For Looped:" + gameBoardObject.gameBoardArray[x])
     newGameBoardArray.push(gameBoardObject.gameBoardArray[x])    
 }
 
-console.log(newGameBoardArray);
+
+console.log("new game board: ", newGameBoardArray);
 
 
 
 
+// Next, put: if newGameBoardArray looks like [X,O,X,...] or newGameBoardArray looks like [X,X,O,...], then call it a tie.
 
-console.log(gameBoardObject.gameBoardArray== ['', 'X', '',
+if (newGameBoardArray== ['', 'X', '',
     '', 'X', '',
-    '', 'X', ''])
+    '', 'X', '']){
+        console.log("It works!")
+    }
+else{console.log("I don't work!")}
 
 
+console.log(typeof(newGameBoardArray))
+
+console.log(typeof('', 'X', '',
+    '', 'X', '',
+    '', 'X', '']))
 
 
 resultObject.p1Win();
