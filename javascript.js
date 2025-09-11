@@ -161,9 +161,7 @@ else{console.log("I don't work!")}
 
 console.log(typeof(newGameBoardArray))
 
-console.log(typeof('', 'X', '',
-    '', 'X', '',
-    '', 'X', '']))
+console.log(typeof(['', 'X', '','', 'X', '','', 'X', '']))
 
 
 resultObject.p1Win();
