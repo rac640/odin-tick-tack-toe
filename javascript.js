@@ -135,8 +135,18 @@ const resultObject = {
 // Possible solution: use For Loop and put the object values into an array. Then, compare this array to how a tied result should look. 
 
 
-console.log(gameBoardObject.gameBoardArray.length)
-// for (let x = 0; x++)
+newGameBoardArray = [];
+
+// Put these values in the newGameBoardArray. Next, put: if newGameBoardArray looks like [X,O,X,...] or newGameBoardArray looks like [X,X,O,...], then call it a tie.
+for (let x = 0; x < gameBoardObject.gameBoardArray.length ; x++){
+    // console.log("For Looped:" + gameBoardObject.gameBoardArray[x])
+    newGameBoardArray.push(gameBoardObject.gameBoardArray[x])    
+}
+
+console.log(newGameBoardArray);
+
+
+
 
 
 console.log(gameBoardObject.gameBoardArray== ['', 'X', '',
