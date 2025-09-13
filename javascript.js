@@ -151,7 +151,7 @@ console.log("new game board: ", newGameBoardArray);
 
 // Next, put: if newGameBoardArray looks like [X,O,X,...] or newGameBoardArray looks like [X,X,O,...], then call it a tie.
 
-if (newGameBoardArray== ['', 'X', '',
+if (newGameBoardArray.value== ['', 'X', '',
     '', 'X', '',
     '', 'X', '']){
         console.log("It works!")
