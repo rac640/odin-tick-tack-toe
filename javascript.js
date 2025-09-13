@@ -165,3 +165,13 @@ console.log(typeof(['', 'X', '','', 'X', '','', 'X', '']))
 
 
 resultObject.p1Win();
+
+
+
+
+
+// for some reason, it's not working. I need to ask why, and how I can solve this. 
+
+let testArr =['a', 'b','c']
+
+console.log("is this true:" , testArr ==['a', 'b','c']);
