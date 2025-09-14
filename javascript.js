@@ -175,3 +175,10 @@ resultObject.p1Win();
 let testArr =['a', 'b','c']
 
 console.log("is this true:" , testArr ==['a', 'b','c']);
+
+
+// POssible solution: Push the values into a string, and then compare the string. 
+
+let abc = 1;
+
+console.log(abc==1);
