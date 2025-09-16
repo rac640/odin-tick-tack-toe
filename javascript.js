@@ -1,5 +1,4 @@
-// current step: Show "Winner!" when there are 3 Xs in a row. First, create a resultObject (P1 win = true, p2 win = true, tie = true)
-
+// current step: Tie result (line 126)
 
 // You’re going to store the gameboard as an array inside of a Gameboard object, so start there! 
 const gameBoardObject = {
@@ -119,66 +118,10 @@ const resultObject = {
     }),
 
     // All ties in tic-tac-toe: https://codegolf.stackexchange.com/questions/249941/all-possible-ties-in-tic-tac-toe 
-    // If the gameboard looks a certain way, then it should print 'tie!'
-    // if gameboardarray[0,1,2,...8] look like [O,X,X,....], then it should print 'tie!'
-    // Need to find a way to group the array indexes together; instead of writing gameboardobject.gameboardarray[0], gameboardobject.gameboardarray[2], etc.
-    // Idea: for loop? 
+    // If the gameBoardArray is P1 or P2 does not win, then it should say "Tie!"
 
     tieResult: (function(){
     })
 }
 
 
-
-
-// Testing out to see if object value  equals array. It doesn't, because the type (object vs array)
-// Possible solution: use For Loop and put the object values into an array. Then, compare this array to how a tied result should look. 
-
-
-newGameBoardArray = [];
-
-// Put these values in the newGameBoardArray. 
-for (let x = 0; x < gameBoardObject.gameBoardArray.length ; x++){
-    // console.log("For Looped:" + gameBoardObject.gameBoardArray[x])
-    newGameBoardArray.push(gameBoardObject.gameBoardArray[x])    
-}
-
-
-console.log("new game board: ", newGameBoardArray);
-
-
-
-
-// Next, put: if newGameBoardArray looks like [X,O,X,...] or newGameBoardArray looks like [X,X,O,...], then call it a tie.
-
-if (newGameBoardArray.value== ['', 'X', '',
-    '', 'X', '',
-    '', 'X', '']){
-        console.log("It works!")
-    }
-else{console.log("I don't work!")}
-
-
-console.log(typeof(newGameBoardArray))
-
-console.log(typeof(['', 'X', '','', 'X', '','', 'X', '']))
-
-
-resultObject.p1Win();
-
-
-
-
-
-// for some reason, it's not working. I need to ask why, and how I can solve this. 
-
-let testArr =['a', 'b','c']
-
-console.log("is this true:" , testArr ==['a', 'b','c']);
-
-
-// POssible solution: Push the values into a string, and then compare the string. 
-
-let abc = 1;
-
-console.log(abc==1);
