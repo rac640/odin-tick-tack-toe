@@ -13,6 +13,7 @@ function Gameboard() {
   for (let i = 0; i < rows; i++){
     my2DArray[i] = [];
     for (let j = 0; j < columns; j++){
+        // element in row i, column j of my2DArray 
         my2DArray[i][j] = j;
     }
   }
