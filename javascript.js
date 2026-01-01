@@ -6,10 +6,9 @@
 
 //  created a 2D array: https://sentry.io/answers/how-can-i-create-a-two-dimensional-array-in-javascript/
 function Gameboard() {
-  const my2DArray = [];
-  const rows = 3;
-
-  const columns = 3;
+    const my2DArray = [];
+    const rows = 3;
+    const columns = 3;
 
   for (let i = 0; i < rows; i++){
     my2DArray[i] = [];
@@ -18,21 +17,30 @@ function Gameboard() {
         my2DArray[i][j] = j;
     }
   }
+    return my2DArray;
 
-  console.log(my2DArray);
+
 }
+
+function putAnX(row, column){
+ my2DArray[row][column]="TEST";
+
+ }
+
+
+
 
 
 
 
 const player1 = {
-    name: player1Name ,
+    name: "player1Name",
     token: 1 ,
     player1Value: "X"
 }
 
 const player2 = {
-    name: player2Name, 
+    name: "player2Name", 
     token: 2,
     player2Value: "O"
 }
