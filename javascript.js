@@ -2,7 +2,7 @@
 
 
 
-// Step 2: Create players; give them turn properties + values. 
+// Next step: Put the player1Value(X) in Gameboard.  
 
 //  created a 2D array: https://sentry.io/answers/how-can-i-create-a-two-dimensional-array-in-javascript/
 function Gameboard() {
@@ -27,16 +27,18 @@ function Gameboard() {
 
 const player1 = {
     name: player1Name ,
-    token: 1
+    token: 1 ,
+    player1Value: "X"
 }
 
 const player2 = {
     name: player2Name, 
-    token: 2
+    token: 2,
+    player2Value: "O"
 }
 
 
-// if the token is 1, then it is player1's turn 
+// if the token is 1, then it is player1's turn. Put an X. 
 
 
 
