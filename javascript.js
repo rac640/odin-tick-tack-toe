@@ -4,28 +4,39 @@
 
 // Next step: Put the player1Value(X) in Gameboard.  
 
-//  created a 2D array: https://sentry.io/answers/how-can-i-create-a-two-dimensional-array-in-javascript/
-function Gameboard() {
-    const my2DArray = [];
-    const rows = 3;
-    const columns = 3;
 
-  for (let i = 0; i < rows; i++){
-    my2DArray[i] = [];
-    for (let j = 0; j < columns; j++){
-        // element in row i, column j of my2DArray 
-        my2DArray[i][j] = j;
+
+
+
+let  Gameboard = {
+     my2DArray: [],
+     rows : 3, 
+     columns : 3,
+
+     //  created a 2D array: https://sentry.io/answers/how-can-i-create-a-two-dimensional-array-in-javascript/
+  getArray: function(){
+  for (let i = 0; i < this.rows; i++){
+      this.my2DArray[i] = [];
+      for (let j = 0; j < this.columns; j++){
+          // element in row i, column j of my2DArray 
+          this.my2DArray[i][j] = j;
+      }
     }
+    return this.my2DArray;
   }
-    return my2DArray;
 
+
+// function putAnX(row, column){
+//  my2DArray[row][column]="TEST";
+
+//  }
 
 }
 
-function putAnX(row, column){
- my2DArray[row][column]="TEST";
 
- }
+
+
+
 
 
 
