@@ -3,6 +3,7 @@
 
 
 // Next step: Put the player1Value(X) in Gameboard.  
+// Problem (Line 29): getting the following Error: Uncaught TypeError: Cannot read properties of undefined (reading '0')
 
 
 
@@ -23,15 +24,17 @@ let  Gameboard = {
       }
     }
     return this.my2DArray;
+  },
+
+  putAnX: function(rowsInput,columnsInput){
+    this.my2DArray[rowsInput][columnsInput]="TEST";
+}
+
   }
 
 
-// function putAnX(row, column){
-//  my2DArray[row][column]="TEST";
-
 //  }
 
-}
 
 
 
