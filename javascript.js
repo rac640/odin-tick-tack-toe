@@ -18,11 +18,12 @@ const gameBoard = [[1,2,3],
 const player1 = {
   name: "playerOne",
   turn: true,
+  putAnX: function(){
+    // Gameboard.getArray() is an object type. 
+    console.log("testing:" + Gameboard.getArray());
+    // replace the 
 
-  // replace the gameboard[row][column] with an X. 
-  putAnX: function(row, column){
-    gameBoard[row][column] = "X";
-    
+
   }
 
 }
