@@ -18,10 +18,9 @@ const gameBoard = [[1,2,3],
 const player1 = {
   name: "playerOne",
   turn: true,
-  putAnX: function(){
+  putAnX: function(row, column){
     // Gameboard.getArray() is an object type. 
-    console.log("testing:" + Gameboard.getArray());
-    // replace the 
+    gameBoard[row][column] = "X";
 
 
   }
@@ -29,16 +28,18 @@ const player1 = {
 }
 
 
-// Attributes of player 2 object: Name, turn, and it can put an X on the board. 
 
+// Attributes of player 2 object: Name, turn, and it can put an X on the board. 
 const player2 = {
   name: "playerTwo",
   turn: false,
-  putAnO: function (row, column){
+  putAnO: function(row, column){
+    // Gameboard.getArray() is an object type. 
     gameBoard[row][column] = "O";
 
   }
 }
+
 
 
 
