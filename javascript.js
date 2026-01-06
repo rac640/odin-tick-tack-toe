@@ -28,6 +28,18 @@ const player1 = {
 }
 
 
+// Attributes of player 2 object: Name, turn, and it can put an X on the board. 
+
+const player2 = {
+  name: "playerTwo",
+  turn: false,
+  putAnO: function (row, column){
+    gameBoard[row][column] = "O";
+
+  }
+}
+
+
 
 
 
