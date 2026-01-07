@@ -22,7 +22,7 @@ const player1 = {
   turn: true,
   putAnX: function(row, column){
     // Gameboard.getArray() is an object type. 
-    gameBoard[row][column] = "X";
+    gameBoardObject.gameBoard[row][column] = "X";
 
 
   }
