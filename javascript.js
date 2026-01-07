@@ -1,9 +1,7 @@
 // Use this as a guide: https://replit.com/@40percentzinc/ConnectFourConsole#script.js 
 
 
-
-// Next step: Store gameboard array in gameboard object 
-// Problem (Line 29): getting the following Error: Uncaught TypeError: Cannot read properties of undefined (reading '0')
+// Next step: Player Turns. Read this: https://codingnomads.com/js-201-connect-4-project-alternate-player-turns#what-information-do-you-need 
 
 
 
@@ -16,6 +14,11 @@ const gameBoardObject = {
             [7,8,9]]
 }
 
+
+
+// players stored in player object 
+
+
 // Attributes of player 1 object: Name, turn, and it can put an X on the board. 
 const player1 = {
   name: "playerOne",
@@ -26,7 +29,7 @@ const player1 = {
 
 }
 
-// Attributes of player 2 object: Name, turn, and it can put an X on the board. 
+// Attributes of player 2 object: Name, turn, and it can put an O on the board. 
 const player2 = {
   name: "playerTwo",
   turn: false,
@@ -36,3 +39,6 @@ const player2 = {
 
   }
 }
+
+
+
