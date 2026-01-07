@@ -21,10 +21,7 @@ const player1 = {
   name: "playerOne",
   turn: true,
   putAnX: function(row, column){
-    // Gameboard.getArray() is an object type. 
     gameBoardObject.gameBoard[row][column] = "X";
-
-
   }
 
 }
@@ -35,7 +32,7 @@ const player2 = {
   turn: false,
   putAnO: function(row, column){
     // Gameboard.getArray() is an object type. 
-    gameBoard[row][column] = "O";
+    gameBoardObject.gameBoard[row][column] = "O";
 
   }
 }
