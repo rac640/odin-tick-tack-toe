@@ -2,17 +2,19 @@
 
 
 
-// Next step: Put the player1Value(X) in Gameboard.  
+// Next step: Store gameboard array in gameboard object 
 // Problem (Line 29): getting the following Error: Uncaught TypeError: Cannot read properties of undefined (reading '0')
 
 
 
+// Step of storing the gameBoard (array) in gameBoard Object 
+const gameBoardObject = {
+  // Making a simple gameboard (2D Array): https://www.youtube.com/watch?v=SmJNeJuLmVo
 
-// Making a simple gameboard (2D Array): https://www.youtube.com/watch?v=SmJNeJuLmVo
-const gameBoard = [[1,2,3],
-                   [4,5,6],
-                   [7,8,9]]
-
+ gameBoard: [[1,2,3],
+            [4,5,6],
+            [7,8,9]]
+}
 
 // Attributes of player 1 object: Name, turn, and it can put an X on the board. 
 const player1 = {
