@@ -1,7 +1,9 @@
 // Use this as a guide: https://replit.com/@40percentzinc/ConnectFourConsole#script.js 
 
 
-// Next step: Player Turns. Read this: https://codingnomads.com/js-201-connect-4-project-alternate-player-turns#what-information-do-you-need 
+// Current Step: Players cannot overlap (Ex: player 2 cannot put an O on top of player 1's X )
+
+// following step: Player Turns. Read this: https://codingnomads.com/js-201-connect-4-project-alternate-player-turns#what-information-do-you-need 
 
 
 
@@ -9,9 +11,9 @@
 const gameBoardObject = {
   // Making a simple gameboard (2D Array): https://www.youtube.com/watch?v=SmJNeJuLmVo
 
- gameBoard: [[1,2,3],
-            [4,5,6],
-            [7,8,9]]
+ gameBoard: [["" ,"" ,"" ],
+            [ "","" ,"" ],
+            [ "","" ,"" ]]
 }
 
 
@@ -24,7 +26,11 @@ const player1 = {
   name: "playerOne",
   turn: true,
   putAnX: function(row, column){
-    gameBoardObject.gameBoard[row][column] = "X";
+      // if the gameboard is empty, then put the X. 
+    if (gameBoardObject.gameBoard[row][column]==""){
+      gameBoardObject.gameBoard[row][column] = "X";
+    }
+  
   }
 
 }
@@ -34,11 +40,16 @@ const player2 = {
   name: "playerTwo",
   turn: false,
   putAnO: function(row, column){
-    // Gameboard.getArray() is an object type. 
-    gameBoardObject.gameBoard[row][column] = "O";
+
+    // if the gameboard is empty, then put the O. 
+    if (gameBoardObject.gameBoard[row][column]==""){
+      gameBoardObject.gameBoard[row][column] = "O";
+    }
 
   }
 }
+
+
 
 
 
