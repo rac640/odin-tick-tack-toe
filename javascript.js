@@ -1,7 +1,6 @@
 // Use this as a guide: https://replit.com/@40percentzinc/ConnectFourConsole#script.js 
 
 
-// Current Step: Players cannot overlap (Ex: player 2 cannot put an O on top of player 1's X )
 
 // following step: Player Turns. Read this: https://codingnomads.com/js-201-connect-4-project-alternate-player-turns#what-information-do-you-need 
 
@@ -51,5 +50,7 @@ const player2 = {
 
 
 
-
+const switchPlayerTurn = () => {
+    activePlayer = activePlayer === players[0] ? players[1] : players[0];
+  };
 
