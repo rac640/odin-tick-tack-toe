@@ -26,6 +26,7 @@ const player1 = {
   turn: true,
   putAnX: function(row, column){
       // if the gameboard is empty, then put the X. 
+      // Also, if it's player1's turn, then put the X. and make player2 turn true. 
     if (gameBoardObject.gameBoard[row][column]==""){
       gameBoardObject.gameBoard[row][column] = "X";
     }
@@ -48,9 +49,4 @@ const player2 = {
   }
 }
 
-
-
-const switchPlayerTurn = () => {
-    activePlayer = activePlayer === players[0] ? players[1] : players[0];
-  };
 
