@@ -27,8 +27,11 @@ const player1 = {
   putAnX: function(row, column){
       // if the gameboard is empty, then put the X. 
       // Also, if it's player1's turn, then put the X. and make player2 turn true. 
-    if (gameBoardObject.gameBoard[row][column]==""){
+    if (player1.turn == true && gameBoardObject.gameBoard[row][column]==""){
       gameBoardObject.gameBoard[row][column] = "X";
+      player1.turn = false;
+      player2.turn = true;
+      console.log("Player 2's turn now!");
     }
   
   }
@@ -42,8 +45,11 @@ const player2 = {
   putAnO: function(row, column){
 
     // if the gameboard is empty, then put the O. 
-    if (gameBoardObject.gameBoard[row][column]==""){
+    if (player2.turn == true && gameBoardObject.gameBoard[row][column]==""){
       gameBoardObject.gameBoard[row][column] = "O";
+      player1.turn = true;
+      player2.turn = false;
+      console.log("Player 1's turn now!");
     }
 
   }
