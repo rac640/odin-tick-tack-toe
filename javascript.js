@@ -12,7 +12,20 @@ const gameBoardObject = {
  gameBoard: [["" ,"" ,"" ],
             [ "","" ,"" ],
             [ "","" ,"" ]],
-}
+
+ outcomes: (function(){
+    if (gameBoardObject.gameBoard[0][1] =="X"){
+        console.log("Player 1 wins! abac")
+      }
+
+    else{
+      console.log("Game is still going!")
+    }
+  }
+  )
+  
+  }
+        
 
 
 
@@ -54,16 +67,3 @@ const player2 = {
 
 
 
-
-(function gameOutcomes(){
-  // If the gameboard looks a certain way, then player 1 wins. 
-  if (gameBoardObject.gameboard == 
-
-    [["X" ,"" ,"" ],
-            [ "","" ,"" ],
-            [ "","" ,"" ]]
-
-  ){console.log("Player 1 wins!")}
-
-
-})
