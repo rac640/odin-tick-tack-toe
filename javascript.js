@@ -2,8 +2,7 @@
 
 
 
-// following step: Player Turns. Read this: https://codingnomads.com/js-201-connect-4-project-alternate-player-turns#what-information-do-you-need 
-
+// Next step: Win, loss, tie 
 
 
 // Step of storing the gameBoard (array) in gameBoard Object 
@@ -12,14 +11,12 @@ const gameBoardObject = {
 
  gameBoard: [["" ,"" ,"" ],
             [ "","" ,"" ],
-            [ "","" ,"" ]]
+            [ "","" ,"" ]],
 }
 
 
 
 // players stored in player object 
-
-
 // Attributes of player 1 object: Name, turn, and it can put an X on the board. 
 const player1 = {
   name: "playerOne",
@@ -56,3 +53,17 @@ const player2 = {
 }
 
 
+
+
+(function gameOutcomes(){
+  // If the gameboard looks a certain way, then player 1 wins. 
+  if (gameBoardObject.gameboard == 
+
+    [["X" ,"" ,"" ],
+            [ "","" ,"" ],
+            [ "","" ,"" ]]
+
+  ){console.log("Player 1 wins!")}
+
+
+})
