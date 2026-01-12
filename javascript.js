@@ -5,6 +5,8 @@
 // Next step: Win, loss, tie 
 
 
+// In the player1 and player2 objects: After putting a mark, it should check to see if anyone won. 
+
 // Step of storing the gameBoard (array) in gameBoard Object 
 const gameBoardObject = {
   // Making a simple gameboard (2D Array): https://www.youtube.com/watch?v=SmJNeJuLmVo
@@ -42,6 +44,9 @@ const player1 = {
       player1.turn = false;
       player2.turn = true;
       console.log("Player 2's turn now!");
+      // After putting the X and
+      gameBoardObject.outcomes()
+
     }
   
   }
