@@ -44,7 +44,7 @@ const player1 = {
       player1.turn = false;
       player2.turn = true;
       console.log("Player 2's turn now!");
-      // After putting the X and
+      // After putting the X, check to see if anyone won. 
       gameBoardObject.outcomes()
 
     }
@@ -65,6 +65,9 @@ const player2 = {
       player1.turn = true;
       player2.turn = false;
       console.log("Player 1's turn now!");
+      // After putting O, check to see if anyone won. 
+      gameBoardObject.outcomes()
+
     }
 
   }
