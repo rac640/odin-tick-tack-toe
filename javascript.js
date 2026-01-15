@@ -16,8 +16,13 @@ const gameBoardObject = {
             [ "","" ,"" ]],
 
  outcomes: (function(){
-    if (gameBoardObject.gameBoard[0][1] =="X"){
-        console.log("Player 1 wins! abac")
+
+  // Here are the ways that player 1 will win: 
+    if (gameBoardObject.gameBoard[0][1] =="X" && 
+        gameBoardObject.gameBoard[0][1]=="X" &&
+        gameBoardObject.gameBoard[0][2]=="X"      
+      ){
+        console.log("Player 1 wins!")
       }
 
     else{
