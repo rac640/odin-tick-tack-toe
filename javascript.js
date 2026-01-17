@@ -18,9 +18,17 @@ const gameBoardObject = {
  outcomes: (function(){
 
   // Here are the ways that player 1 will win: 
-    if (gameBoardObject.gameBoard[0][1] =="X" && 
+    if (
+      // If the gameboard looks like this, Then P1 Wins. 
+      (gameBoardObject.gameBoard[0][0] =="X" && 
         gameBoardObject.gameBoard[0][1]=="X" &&
-        gameBoardObject.gameBoard[0][2]=="X"      
+        gameBoardObject.gameBoard[0][2]=="X") 
+        // Or, if gameboard looks like this, then P1 Wins. 
+        ||
+       (gameBoardObject.gameBoard[1][0] =="X" && 
+        gameBoardObject.gameBoard[1][1]=="X" &&
+        gameBoardObject.gameBoard[1][2]=="X") 
+
       ){
         console.log("Player 1 wins!")
       }
