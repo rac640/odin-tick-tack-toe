@@ -31,6 +31,7 @@ const gameBoardObject = {
 
       ){
         console.log("Player 1 wins!")
+        // It should end the game, NOT next player's turn. 
       }
 
     else{
