@@ -17,24 +17,53 @@ const gameBoardObject = {
 
  outcomes: (function(){
 
-  // Here are the ways that player 1 will win: 
+  // Here are the ways that player 1 will win (8 ways): 
     if (
-      // If the gameboard looks like this (all Xs on top), Then P1 Wins. 
+      // If the gameboard looks like this (Horizontal way 1: all Xs on top), Then P1 Wins. 
       (gameBoardObject.gameBoard[0][0] =="X" && 
         gameBoardObject.gameBoard[0][1]=="X" &&
         gameBoardObject.gameBoard[0][2]=="X") 
-        // Or, if gameboard looks like this (All Xs in middle), then P1 Wins. 
+        // Or, if gameboard looks like this (Horizontal Way 2: All Xs in middle), then P1 Wins. 
         ||
        (gameBoardObject.gameBoard[1][0] =="X" && 
         gameBoardObject.gameBoard[1][1]=="X" &&
         gameBoardObject.gameBoard[1][2]=="X") 
-        // Or, if gameboard looks like this (all Xs in bottom), Then P1 wins.
+        // Or, if gameboard looks like this (Horizontal Way 3: all Xs in bottom), Then P1 wins.
         ||
         (gameBoardObject.gameBoard[2][0] =="X" && 
         gameBoardObject.gameBoard[2][1]=="X" &&
         gameBoardObject.gameBoard[2][2]=="X")
 
-        
+        // Vertical ways (3 ways)for Player 1 to win:
+        // vertical (left):
+        ||
+        (gameBoardObject.gameBoard[0][0] =="X" && 
+        gameBoardObject.gameBoard[1][0]=="X" &&
+        gameBoardObject.gameBoard[2][0]=="X")
+        // vertical (middle):
+        ||
+        (gameBoardObject.gameBoard[0][1] =="X" && 
+        gameBoardObject.gameBoard[1][1]=="X" &&
+        gameBoardObject.gameBoard[2][1]=="X")
+        // vertical (right):
+        ||
+        (gameBoardObject.gameBoard[0][2] =="X" && 
+        gameBoardObject.gameBoard[1][2]=="X" &&
+        gameBoardObject.gameBoard[2][2]=="X")
+
+
+        // Diagonal (2 ways) for player 1 to win:
+        // Diagonal Way 1:
+        ||
+        (gameBoardObject.gameBoard[0][0] =="X" && 
+        gameBoardObject.gameBoard[1][1]=="X" &&
+        gameBoardObject.gameBoard[2][2]=="X")  
+        // Diagonal Way 2:
+        ||
+        (gameBoardObject.gameBoard[0][2] =="X" && 
+        gameBoardObject.gameBoard[1][1]=="X" &&
+        gameBoardObject.gameBoard[2][0]=="X")
+
       ){
         console.log("Player 1 wins!")
         // It should end the game, NOT next player's turn. 
@@ -43,7 +72,7 @@ const gameBoardObject = {
 
       // Here are the ways that player 2 will win:
 
-      // Here are the ways that it will be a draw (if it's not like any of the ones from player 1 or 2)
+      // Here are the ways that it will be a draw (else, if gameboard is NOT empty, print "draw!")
     else{
       console.log("Game is still going!")
     }
