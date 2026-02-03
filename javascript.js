@@ -19,16 +19,22 @@ const gameBoardObject = {
 
   // Here are the ways that player 1 will win: 
     if (
-      // If the gameboard looks like this, Then P1 Wins. 
+      // If the gameboard looks like this (all Xs on top), Then P1 Wins. 
       (gameBoardObject.gameBoard[0][0] =="X" && 
         gameBoardObject.gameBoard[0][1]=="X" &&
         gameBoardObject.gameBoard[0][2]=="X") 
-        // Or, if gameboard looks like this, then P1 Wins. 
+        // Or, if gameboard looks like this (All Xs in middle), then P1 Wins. 
         ||
        (gameBoardObject.gameBoard[1][0] =="X" && 
         gameBoardObject.gameBoard[1][1]=="X" &&
         gameBoardObject.gameBoard[1][2]=="X") 
+        // Or, if gameboard looks like this (all Xs in bottom), Then P1 wins.
+        ||
+        (gameBoardObject.gameBoard[2][0] =="X" && 
+        gameBoardObject.gameBoard[2][1]=="X" &&
+        gameBoardObject.gameBoard[2][2]=="X")
 
+        
       ){
         console.log("Player 1 wins!")
         // It should end the game, NOT next player's turn. 
