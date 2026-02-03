@@ -34,6 +34,10 @@ const gameBoardObject = {
         // It should end the game, NOT next player's turn. 
       }
 
+
+      // Here are the ways that player 2 will win:
+
+      // Here are the ways that it will be a draw (if it's not like any of the ones from player 1 or 2)
     else{
       console.log("Game is still going!")
     }
