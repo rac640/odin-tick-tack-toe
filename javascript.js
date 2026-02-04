@@ -69,8 +69,47 @@ const gameBoardObject = {
         // It should end the game, NOT next player's turn. 
       }
 
+      // Ways Player 2 will win (Copy and pasted from Player 1, replaced X with O) 
 
-      // Here are the ways that player 2 will win:
+      else if (
+
+        (gameBoardObject.gameBoard[0][0] =="O" && 
+        gameBoardObject.gameBoard[0][1]=="O" &&
+        gameBoardObject.gameBoard[0][2]=="O") 
+        ||
+       (gameBoardObject.gameBoard[1][0] =="O" && 
+        gameBoardObject.gameBoard[1][1]=="O" &&
+        gameBoardObject.gameBoard[1][2]=="O") 
+        ||
+        (gameBoardObject.gameBoard[2][0] =="O" && 
+        gameBoardObject.gameBoard[2][1]=="O" &&
+        gameBoardObject.gameBoard[2][2]=="O")
+
+        ||
+        (gameBoardObject.gameBoard[0][0] =="O" && 
+        gameBoardObject.gameBoard[1][0]=="O" &&
+        gameBoardObject.gameBoard[2][0]=="O")
+        ||
+        (gameBoardObject.gameBoard[0][1] =="O" && 
+        gameBoardObject.gameBoard[1][1]=="O" &&
+        gameBoardObject.gameBoard[2][1]=="O")
+        ||
+        (gameBoardObject.gameBoard[0][2] =="O" && 
+        gameBoardObject.gameBoard[1][2]=="O" &&
+        gameBoardObject.gameBoard[2][2]=="O")
+
+        ||
+        (gameBoardObject.gameBoard[0][0] =="O" && 
+        gameBoardObject.gameBoard[1][1]=="O" &&
+        gameBoardObject.gameBoard[2][2]=="O")  
+        ||
+        (gameBoardObject.gameBoard[0][2] =="O" && 
+        gameBoardObject.gameBoard[1][1]=="O" &&
+        gameBoardObject.gameBoard[2][0]=="O")
+      ){
+        console.log("Player 2 Wins!")
+      }
+
 
       // Here are the ways that it will be a draw (else, if gameboard is NOT empty, print "draw!")
     else{
