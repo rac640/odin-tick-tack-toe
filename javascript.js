@@ -110,10 +110,10 @@ const gameBoardObject = {
         console.log("Player 2 Wins!")
       }
 
-
-      // Here are the ways that it will be a draw (else, if gameboard is NOT empty, print "draw!")
+// Everything else is a tie.  
+// When the gameboard is not empty
     else{
-      console.log("Game is still going!")
+      console.log("Tie!")
     }
   }
   )
