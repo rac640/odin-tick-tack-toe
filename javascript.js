@@ -113,9 +113,9 @@ const gameBoardObject = {
 // Everything else is a tie.  
 // if the gameboard is full (gameboard is NOT empty) and P1 or P2 doesn't win, then it's a tie. 
     else if (
-      ( gameBoardObject.gameboard[0][0] != "" && gameBoardObject.gameboard[0][1]!= "" && gameBoardObject.gameBoard[0][2]
-        && gameBoardObject.gameboard[1][0] != "" && gameBoardObject.gameboard[1][0] != "" && gameBoardObject.gameboard[1][0] != ""
-        && gameBoardObject.gameboard[1][0] != "" && gameBoardObject.gameboard[1][0] != "" && gameBoardObject.gameboard[1][0] != ""
+      ( gameBoardObject.gameBoard[0][0] != "" && gameBoardObject.gameBoard[0][1]!= "" && gameBoardObject.gameBoard[0][2] !=""
+        && gameBoardObject.gameBoard[1][0] != "" && gameBoardObject.gameBoard[1][0] != "" && gameBoardObject.gameBoard[1][0] != ""
+        && gameBoardObject.gameBoard[1][0] != "" && gameBoardObject.gameBoard[1][0] != "" && gameBoardObject.gameBoard[1][0] != ""
        )
     )
       {
