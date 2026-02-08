@@ -2,7 +2,7 @@
 
 
 
-// Next step: Win, loss, tie 
+// Next step: When Win, Loss, or tie, end the game.
 
 
 // In the player1 and player2 objects: After putting a mark, it should check to see if anyone won. 
