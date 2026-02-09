@@ -112,6 +112,11 @@ const gameBoardObject = {
         gameBoardObject.gameBoard[2][0]=="O")
       ){
         console.log("Player 2 Wins!")
+        // It should end the game, NOT next player's turn. 
+
+        // turn both player 1 and player 2 turn to false. 
+        player1.turn = false;
+        player2.turn = false;
       }
 
 // Everything else is a tie.  
