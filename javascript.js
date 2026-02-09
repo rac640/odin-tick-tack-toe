@@ -67,6 +67,10 @@ const gameBoardObject = {
       ){
         console.log("Player 1 wins!")
         // It should end the game, NOT next player's turn. 
+
+        // turn both player 1 and player 2 turn to false. 
+        player1.turn = false;
+        player2.turn = false;
       }
 
       // Ways Player 2 will win (Copy and pasted from Player 1, replaced X with O) 
