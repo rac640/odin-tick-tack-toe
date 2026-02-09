@@ -2,7 +2,7 @@
 
 
 
-// Next step: When Win, Loss, or tie, end the game.
+// Next step: Button/command to reset game (player 1 turn is true, board cleared)
 
 
 // In the player1 and player2 objects: After putting a mark, it should check to see if anyone won. 
