@@ -119,6 +119,8 @@ const gameBoardObject = {
         player2.turn = false;
       }
 
+
+
 // Everything else is a tie.  
 // if the gameboard is full (gameboard is NOT empty) and P1 or P2 doesn't win, then it's a tie. 
     else if (
@@ -131,8 +133,28 @@ const gameBoardObject = {
       console.log("Tie!")
     }
   }
-  )
-  
+  ) ,
+
+// Resetting the game (emptying the gameboard, setting to player 1's turn) 
+
+gameboardReset: (function(){
+  // Nested for loop 2D array reference: https://stackoverflow.com/questions/10021847/for-loop-in-multidimensional-javascript-array
+  for (let i = 0; i < gameBoardObject.gameBoard.length ; i++){
+    let boardPiece = gameBoardObject.gameBoard[i];
+    for (let b = 0; b < boardPiece.length; b++){
+      boardPiece[b] = "";
+    }
+  }
+  // Set player 1 turn to true, player 2 to false.
+  player1.turn = true;
+  player2.turn = false;
+})
+
+
+
+
+
+
   }
         
 
