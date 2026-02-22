@@ -8,9 +8,13 @@
 // select all the divs. When someone clicks on it, the background should be blue. 
 const testClick = document.querySelectorAll(".putXorOHere");
 
-testClick.addEventListener("click", ()=>{
-  testClick.style.background = "blue";
-})
+//to select each button in the class: 
+testClick.forEach((box)=>{
+  // for each button, add an event listener; when box is clicked, 
+  box.addEventListener("click", function (){
+  box.style.background= "red";
+  }) 
+});
 
 // In the player1 and player2 objects: After putting a mark, it should check to see if anyone won. 
 
