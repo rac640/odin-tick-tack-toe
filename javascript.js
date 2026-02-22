@@ -2,8 +2,7 @@
 
 
 
-// Next step: Time for the DOM! Update HTML document to include gameboard divs. 
-// Basic first idea: on click, change background. 
+// Next step: On player 1's turn, make the box Green. Player 2 turn, make box purple
 
 // select all the divs. When someone clicks on it, the background should be blue. 
 const testClick = document.querySelectorAll(".putXorOHere");
