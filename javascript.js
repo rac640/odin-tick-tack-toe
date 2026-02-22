@@ -3,8 +3,14 @@
 
 
 // Next step: Time for the DOM! Update HTML document to include gameboard divs. 
- 
+// Basic first idea: on click, change background. 
 
+// select all the divs. When someone clicks on it, the background should be blue. 
+const testClick = document.querySelectorAll(".putXorOHere");
+
+testClick.addEventListener("click", ()=>{
+  testClick.style.background = "blue";
+})
 
 // In the player1 and player2 objects: After putting a mark, it should check to see if anyone won. 
 
