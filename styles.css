@@ -5,3 +5,11 @@
     border: 2px solid black;
     background-color: aquamarine;
 }
+
+
+.gameBoardContainer {
+
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+   
+}
