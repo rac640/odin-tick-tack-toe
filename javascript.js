@@ -9,9 +9,19 @@ const testClick = document.querySelectorAll(".putXorOHere");
 
 //to select each button in the class: 
 testClick.forEach((box)=>{
-  // for each button, add an event listener; when box is clicked, 
+  // for each button, add an event listener 
   box.addEventListener("click", function (){
-  box.style.background= "red";
+
+    // if it's player 1's turn, make the box green.
+  if (player1.turn==true){
+    box.style.background= "red"; 
+  }
+
+  // Else (player 2 turn), make the box purple.
+  else if (player2.turn==true){
+    box.style.background = "blue";
+  }
+  
   }) 
 });
 
