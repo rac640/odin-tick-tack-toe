@@ -2,8 +2,7 @@
 
 
 
-// Next step: On player 1's turn, make the box Green. Player 2 turn, make box purple
-
+// Next step: MAKE PLAYER 2 ELSE STATEMENT WORK (Line 20)
 // select all the divs. When someone clicks on it, the background should be blue. 
 const testClick = document.querySelectorAll(".putXorOHere");
 
