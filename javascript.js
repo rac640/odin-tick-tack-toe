@@ -2,7 +2,7 @@
 
 
 
-// Next step: MAKE PLAYER 2 ELSE STATEMENT WORK (Line 20)
+// Change the logic for putAnX, and putAnO
 // select all the divs. When someone clicks on it, the background should be blue. 
 const testClick = document.querySelectorAll(".putXorOHere");
 
@@ -13,12 +13,7 @@ testClick.forEach((box)=>{
 
     // if it's player 1's turn, make the box green.
   if (player1.turn==true){
-    box.style.background= "red"; 
-  }
-
-  // Else (player 2 turn), make the box purple.
-  else if (player2.turn==true){
-    box.style.background = "blue";
+    console.log("True P1 turn")
   }
   
   }) 
@@ -188,7 +183,9 @@ const player1 = {
       // if the gameboard is empty, then put the X. 
       // Also, if it's player1's turn, then put the X. and make player2 turn true. 
     if (player1.turn == true && gameBoardObject.gameBoard[row][column]==""){
-      gameBoardObject.gameBoard[row][column] = "X";
+      // The box that was clicked should turn red. 
+      box.style.background="red"
+      // gameBoardObject.gameBoard[row][column] = "X";
       player1.turn = false;
       player2.turn = true;
       console.log("Player 2's turn now!");
