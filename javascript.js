@@ -2,22 +2,26 @@
 
 
 
-// Change the logic for putAnX, and putAnO
-// select all the divs. When someone clicks on it, the background should be blue. 
+// For next time: The new gameBoard (line 32) are the HTML Boxes (testClick, line 10). 
+// For P1 logic: If selected box from gameBoard is empty and p1 turn is true, put red background. 
+
+
+// select all the divs. This is the new gameboard. 
 const testClick = document.querySelectorAll(".putXorOHere");
 
-//to select each button in the class: 
-testClick.forEach((box)=>{
-  // for each button, add an event listener 
-  box.addEventListener("click", function (){
+//Sample to select each button in the class: 
+// testClick.forEach((box)=>{
+//   // for each button, add an event listener 
+//   box.addEventListener("click", function (){
 
-    // if it's player 1's turn, make the box green.
-  if (player1.turn==true){
-    console.log("True P1 turn")
-  }
+//     // if it's player 1's turn, make the box green.
+//   if (player1.turn==true){
+//     console.log("True P1 turn")
+//     box.style.background ="red";
+//   }
   
-  }) 
-});
+//   }) 
+// });
 
 // In the player1 and player2 objects: After putting a mark, it should check to see if anyone won. 
 
@@ -182,9 +186,9 @@ const player1 = {
   putAnX: function(row, column){
       // if the gameboard is empty, then put the X. 
       // Also, if it's player1's turn, then put the X. and make player2 turn true. 
-    if (player1.turn == true && gameBoardObject.gameBoard[row][column]==""){
+    if (player1.turn == true && testClick.box.style.background !=="red"){
       // The box that was clicked should turn red. 
-      box.style.background="red"
+      testClick.box.style.background="red"
       // gameBoardObject.gameBoard[row][column] = "X";
       player1.turn = false;
       player2.turn = true;
