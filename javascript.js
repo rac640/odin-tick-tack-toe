@@ -2,26 +2,35 @@
 
 
 
-// For next time: The new gameBoard (line 32) are the HTML Boxes (testClick, line 10). 
-// For P1 logic: If selected box from gameBoard is empty and p1 turn is true, put red background. 
-
+ 
 
 // select all the divs. This is the new gameboard. 
 const testClick = document.querySelectorAll(".putXorOHere");
 
 //Sample to select each button in the class: 
-// testClick.forEach((box)=>{
+testClick.forEach((box)=>{
 //   // for each button, add an event listener 
-//   box.addEventListener("click", function (){
+ box.addEventListener("click", function (){
 
-//     // if it's player 1's turn, make the box green.
-//   if (player1.turn==true){
-//     console.log("True P1 turn")
-//     box.style.background ="red";
-//   }
+    // if it's player 1's turn, make the box green and make it player 2's turn.
+   if (player1.turn==true){
+     console.log("True P1 turn")
+     box.style.background ="red";
+     player1.turn = false;
+     player2.turn = true;
+   }
+
+    else if (player2.turn==true){
+     console.log("True P2 turn")
+     box.style.background ="blue";
+     player1.turn = true;
+     player2.turn = false;
+   }
+
+  //  
   
-//   }) 
-// });
+   }) 
+ });
 
 // In the player1 and player2 objects: After putting a mark, it should check to see if anyone won. 
 
