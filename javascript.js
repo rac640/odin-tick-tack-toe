@@ -1,11 +1,13 @@
 // Use this as a guide: https://replit.com/@40percentzinc/ConnectFourConsole#script.js 
 
+// To test for next time: Put new Gameboard (lines 9-35() inside of the gameboardObject (line 44)
 
 
  
 
 // select all the divs. This is the new gameboard. 
 const testClick = document.querySelectorAll(".putXorOHere");
+
 
 //Sample to select each button in the class: 
 testClick.forEach((box)=>{
@@ -31,6 +33,8 @@ testClick.forEach((box)=>{
   
    }) 
  });
+
+
 
 // In the player1 and player2 objects: After putting a mark, it should check to see if anyone won. 
 
