@@ -1,40 +1,6 @@
 // Use this as a guide: https://replit.com/@40percentzinc/ConnectFourConsole#script.js 
 
-// To test for next time: Put new Gameboard (lines 9-35() inside of the gameboardObject (line 44)
-
-
- 
-
-// select all the divs. This is the new gameboard. 
-const testClick = document.querySelectorAll(".putXorOHere");
-
-
-//Sample to select each button in the class: 
-testClick.forEach((box)=>{
-//   // for each button, add an event listener 
- box.addEventListener("click", function (){
-
-    // if it's player 1's turn, make the box green and make it player 2's turn.
-   if (player1.turn==true){
-     console.log("True P1 turn")
-     box.style.background ="red";
-     player1.turn = false;
-     player2.turn = true;
-   }
-
-    else if (player2.turn==true){
-     console.log("True P2 turn")
-     box.style.background ="blue";
-     player1.turn = true;
-     player2.turn = false;
-   }
-
-  //  
-  
-   }) 
- });
-
-
+// Target nodeList (gameBoardObject.gameBoard[1] )
 
 // In the player1 and player2 objects: After putting a mark, it should check to see if anyone won. 
 
@@ -42,9 +8,9 @@ testClick.forEach((box)=>{
 const gameBoardObject = {
   // Making a simple gameboard (2D Array): https://www.youtube.com/watch?v=SmJNeJuLmVo
 
- gameBoard: [["" ,"" ,"" ],
-            [ "","" ,"" ],
-            [ "","" ,"" ]],
+// select all the divs. This is the new gameboard. 
+gameBoard: document.querySelectorAll(".putXorOHere") ,
+
 
  outcomes: (function(){
 
