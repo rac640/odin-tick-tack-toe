@@ -17,36 +17,36 @@ gameBoard: document.querySelectorAll(".putXorOHere") ,
   // Here are the ways that player 1 will win (8 ways): 
     if (
       // If the gameboard looks like this (Horizontal way 1: all Xs on top), Then P1 Wins. 
-      (gameBoardObject.gameBoard[0][0] =="X" && 
-        gameBoardObject.gameBoard[0][1]=="X" &&
-        gameBoardObject.gameBoard[0][2]=="X") 
+      (gameBoardObject.gameBoard[0].style.background =="red" && 
+        gameBoardObject.gameBoard[1].style.background =="red" &&
+        gameBoardObject.gameBoard[2].style.background =="red") 
         // Or, if gameboard looks like this (Horizontal Way 2: All Xs in middle), then P1 Wins. 
         ||
-       (gameBoardObject.gameBoard[1][0] =="X" && 
-        gameBoardObject.gameBoard[1][1]=="X" &&
-        gameBoardObject.gameBoard[1][2]=="X") 
+       (gameBoardObject.gameBoard[3].style.background =="red" && 
+        gameBoardObject.gameBoard[4].style.background =="red" &&
+        gameBoardObject.gameBoard[5].style.background =="red") 
         // Or, if gameboard looks like this (Horizontal Way 3: all Xs in bottom), Then P1 wins.
         ||
-        (gameBoardObject.gameBoard[2][0] =="X" && 
-        gameBoardObject.gameBoard[2][1]=="X" &&
-        gameBoardObject.gameBoard[2][2]=="X")
+        (gameBoardObject.gameBoard[6].style.background =="red"&& 
+        gameBoardObject.gameBoard[7].style.background =="red"&&
+        gameBoardObject.gameBoard[8].style.background =="red")
 
         // Vertical ways (3 ways)for Player 1 to win:
         // vertical (left):
         ||
-        (gameBoardObject.gameBoard[0][0] =="X" && 
-        gameBoardObject.gameBoard[1][0]=="X" &&
-        gameBoardObject.gameBoard[2][0]=="X")
+        (gameBoardObject.gameBoard[0].style.background =="red" && 
+        gameBoardObject.gameBoard[3].style.background =="red" &&
+        gameBoardObject.gameBoard[6].style.background =="red")
         // vertical (middle):
         ||
-        (gameBoardObject.gameBoard[0][1] =="X" && 
-        gameBoardObject.gameBoard[1][1]=="X" &&
-        gameBoardObject.gameBoard[2][1]=="X")
+        (gameBoardObject.gameBoard[1].style.background =="red" =="X" && 
+        gameBoardObject.gameBoard[4].style.background =="red"=="X" &&
+        gameBoardObject.gameBoard[7].style.background =="red"=="X")
         // vertical (right):
         ||
-        (gameBoardObject.gameBoard[0][2] =="X" && 
-        gameBoardObject.gameBoard[1][2]=="X" &&
-        gameBoardObject.gameBoard[2][2]=="X")
+        (gameBoardObject.gameBoard[2].style.background =="red" && 
+        gameBoardObject.gameBoard[5].style.background =="red" &&
+        gameBoardObject.gameBoard[8].style.background =="red")
 
 
         // Diagonal (2 ways) for player 1 to win:
