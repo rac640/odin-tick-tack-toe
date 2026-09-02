@@ -162,12 +162,12 @@ gameboardReset: (function(){
 const player1 = {
   name: "playerOne",
   turn: true,
-  putAnX: function(row, column){
+  putAnX: function(boxNum){
       // if the gameboard is empty, then put the X. 
       // Also, if it's player1's turn, then put the X. and make player2 turn true. 
-    if (player1.turn == true && testClick.box.style.background !=="red"){
+    if (player1.turn == true && gameBoardObject.gameBoard[boxNum].style.background !=="red"){
       // The box that was clicked should turn red. 
-      testClick.box.style.background="red"
+      gameBoardObject.gameBoard[boxNum].style.background="red"
       // gameBoardObject.gameBoard[row][column] = "X";
       player1.turn = false;
       player2.turn = true;
