@@ -52,14 +52,14 @@ gameBoard: document.querySelectorAll(".putXorOHere") ,
         // Diagonal (2 ways) for player 1 to win:
         // Diagonal Way 1:
         ||
-        (gameBoardObject.gameBoard[0][0] =="X" && 
-        gameBoardObject.gameBoard[1][1]=="X" &&
-        gameBoardObject.gameBoard[2][2]=="X")  
+        (gameBoardObject.gameBoard[0].style.background =="red" && 
+        gameBoardObject.gameBoard[4].style.background =="red" &&
+        gameBoardObject.gameBoard[8].style.background =="red")  
         // Diagonal Way 2:
         ||
-        (gameBoardObject.gameBoard[0][2] =="X" && 
-        gameBoardObject.gameBoard[1][1]=="X" &&
-        gameBoardObject.gameBoard[2][0]=="X")
+        (gameBoardObject.gameBoard[2].style.background =="red" && 
+        gameBoardObject.gameBoard[4].style.background =="red" &&
+        gameBoardObject.gameBoard[6].style.background =="red")
 
       ){
         console.log("Player 1 wins!")
@@ -146,9 +146,6 @@ gameboardReset: (function(){
   player1.turn = true;
   player2.turn = false;
 })
-
-
-
 
 
 
