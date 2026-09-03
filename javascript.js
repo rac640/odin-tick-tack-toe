@@ -1,8 +1,7 @@
 // Use this as a guide: https://replit.com/@40percentzinc/ConnectFourConsole#script.js 
 
-// Target nodeList (gameBoardObject.gameBoard[1] )
+// Next step: Have P1 make background red of a node
 
-// In the player1 and player2 objects: After putting a mark, it should check to see if anyone won. 
 
 // Step of storing the gameBoard (array) in gameBoard Object 
 const gameBoardObject = {
