@@ -38,9 +38,9 @@ gameBoard: document.querySelectorAll(".putXorOHere") ,
         gameBoardObject.gameBoard[6].style.background =="red")
         // vertical (middle):
         ||
-        (gameBoardObject.gameBoard[1].style.background =="red" =="X" && 
-        gameBoardObject.gameBoard[4].style.background =="red"=="X" &&
-        gameBoardObject.gameBoard[7].style.background =="red"=="X")
+        (gameBoardObject.gameBoard[1].style.background =="red"  && 
+        gameBoardObject.gameBoard[4].style.background =="red" &&
+        gameBoardObject.gameBoard[7].style.background =="red")
         // vertical (right):
         ||
         (gameBoardObject.gameBoard[2].style.background =="red" && 
@@ -73,39 +73,39 @@ gameBoard: document.querySelectorAll(".putXorOHere") ,
 
       else if (
 
-        (gameBoardObject.gameBoard[0][0] =="O" && 
-        gameBoardObject.gameBoard[0][1]=="O" &&
-        gameBoardObject.gameBoard[0][2]=="O") 
+        (gameBoardObject.gameBoard[0].style.background =="blue" && 
+        gameBoardObject.gameBoard[1].style.background =="blue" &&
+        gameBoardObject.gameBoard[2].style.background =="blue") 
         ||
-       (gameBoardObject.gameBoard[1][0] =="O" && 
-        gameBoardObject.gameBoard[1][1]=="O" &&
-        gameBoardObject.gameBoard[1][2]=="O") 
+       (gameBoardObject.gameBoard[3].style.background =="blue" && 
+        gameBoardObject.gameBoard[4].style.background =="blue" &&
+        gameBoardObject.gameBoard[5].style.background =="blue") 
         ||
-        (gameBoardObject.gameBoard[2][0] =="O" && 
-        gameBoardObject.gameBoard[2][1]=="O" &&
-        gameBoardObject.gameBoard[2][2]=="O")
+        (gameBoardObject.gameBoard[6].style.background =="blue"&& 
+        gameBoardObject.gameBoard[7].style.background =="blue"&&
+        gameBoardObject.gameBoard[8].style.background =="blue")
 
         ||
-        (gameBoardObject.gameBoard[0][0] =="O" && 
-        gameBoardObject.gameBoard[1][0]=="O" &&
-        gameBoardObject.gameBoard[2][0]=="O")
+        (gameBoardObject.gameBoard[0].style.background =="blue" && 
+        gameBoardObject.gameBoard[3].style.background =="blue" &&
+        gameBoardObject.gameBoard[6].style.background =="blue")
         ||
-        (gameBoardObject.gameBoard[0][1] =="O" && 
-        gameBoardObject.gameBoard[1][1]=="O" &&
-        gameBoardObject.gameBoard[2][1]=="O")
+        (gameBoardObject.gameBoard[1].style.background =="blue"  && 
+        gameBoardObject.gameBoard[4].style.background =="blue" &&
+        gameBoardObject.gameBoard[7].style.background =="blue")
         ||
-        (gameBoardObject.gameBoard[0][2] =="O" && 
-        gameBoardObject.gameBoard[1][2]=="O" &&
-        gameBoardObject.gameBoard[2][2]=="O")
+        (gameBoardObject.gameBoard[2].style.background =="blue" && 
+        gameBoardObject.gameBoard[5].style.background =="blue" &&
+        gameBoardObject.gameBoard[8].style.background =="blue")
 
         ||
-        (gameBoardObject.gameBoard[0][0] =="O" && 
-        gameBoardObject.gameBoard[1][1]=="O" &&
-        gameBoardObject.gameBoard[2][2]=="O")  
+        (gameBoardObject.gameBoard[0].style.background =="blue" && 
+        gameBoardObject.gameBoard[4].style.background =="blue" &&
+        gameBoardObject.gameBoard[8].style.background =="blue")  
         ||
-        (gameBoardObject.gameBoard[0][2] =="O" && 
-        gameBoardObject.gameBoard[1][1]=="O" &&
-        gameBoardObject.gameBoard[2][0]=="O")
+        (gameBoardObject.gameBoard[2].style.background =="blue" && 
+        gameBoardObject.gameBoard[4].style.background =="blue" &&
+        gameBoardObject.gameBoard[6].style.background =="blue")
       ){
         console.log("Player 2 Wins!")
         // It should end the game, NOT next player's turn. 
