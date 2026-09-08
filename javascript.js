@@ -158,7 +158,13 @@ gameboardReset: (function(){
 const player1 = {
   name: "playerOne",
   turn: true,
-  putAnX: function(boxNum){
+  putAnX:
+
+  // Must target node List (gameBoardObject.gameBoard)
+
+
+  (function(boxNum){
+    gameBoardObject.gameBoard[boxNum].onclick = ()=>{
       // if the gameboard is empty, then put the X. 
       // Also, if it's player1's turn, then put the X. and make player2 turn true. 
     if (player1.turn == true && gameBoardObject.gameBoard[boxNum].style.background !=="red"){
@@ -172,8 +178,9 @@ const player1 = {
       gameBoardObject.outcomes()
 
     }
-  
   }
+  
+  })
 
 }
 
