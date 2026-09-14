@@ -11,54 +11,54 @@ const gameBoardObject = {
 gameBoard: document.querySelectorAll(".putXorOHere") ,
 
 
- outcomes: (function(){
+ outcomes: function(){
 
   // Here are the ways that player 1 will win (8 ways): 
     if (
       // If the gameboard looks like this (Horizontal way 1: all Xs on top), Then P1 Wins. 
-      (gameBoardObject.gameBoard[0].style.background =="red" && 
-        gameBoardObject.gameBoard[1].style.background =="red" &&
-        gameBoardObject.gameBoard[2].style.background =="red") 
+      (gameBoardObject.gameBoard[0].style.backgroundColor =="red" && 
+        gameBoardObject.gameBoard[1].style.backgroundColor =="red" &&
+        gameBoardObject.gameBoard[2].style.backgroundColor =="red") 
         // Or, if gameboard looks like this (Horizontal Way 2: All Xs in middle), then P1 Wins. 
         ||
-       (gameBoardObject.gameBoard[3].style.background =="red" && 
-        gameBoardObject.gameBoard[4].style.background =="red" &&
-        gameBoardObject.gameBoard[5].style.background =="red") 
+       (gameBoardObject.gameBoard[3].style.backgroundColor =="red" && 
+        gameBoardObject.gameBoard[4].style.backgroundColor =="red" &&
+        gameBoardObject.gameBoard[5].style.backgroundColor =="red") 
         // Or, if gameboard looks like this (Horizontal Way 3: all Xs in bottom), Then P1 wins.
         ||
-        (gameBoardObject.gameBoard[6].style.background =="red"&& 
-        gameBoardObject.gameBoard[7].style.background =="red"&&
-        gameBoardObject.gameBoard[8].style.background =="red")
+        (gameBoardObject.gameBoard[6].style.backgroundColor =="red"&& 
+        gameBoardObject.gameBoard[7].style.backgroundColor =="red"&&
+        gameBoardObject.gameBoard[8].style.backgroundColor =="red")
 
         // Vertical ways (3 ways)for Player 1 to win:
         // vertical (left):
         ||
-        (gameBoardObject.gameBoard[0].style.background =="red" && 
-        gameBoardObject.gameBoard[3].style.background =="red" &&
-        gameBoardObject.gameBoard[6].style.background =="red")
+        (gameBoardObject.gameBoard[0].style.backgroundColor =="red" && 
+        gameBoardObject.gameBoard[3].style.backgroundColor =="red" &&
+        gameBoardObject.gameBoard[6].style.backgroundColor =="red")
         // vertical (middle):
         ||
-        (gameBoardObject.gameBoard[1].style.background =="red"  && 
-        gameBoardObject.gameBoard[4].style.background =="red" &&
-        gameBoardObject.gameBoard[7].style.background =="red")
+        (gameBoardObject.gameBoard[1].style.backgroundColor =="red"  && 
+        gameBoardObject.gameBoard[4].style.backgroundColor =="red" &&
+        gameBoardObject.gameBoard[7].style.backgroundColor =="red")
         // vertical (right):
         ||
-        (gameBoardObject.gameBoard[2].style.background =="red" && 
-        gameBoardObject.gameBoard[5].style.background =="red" &&
-        gameBoardObject.gameBoard[8].style.background =="red")
+        (gameBoardObject.gameBoard[2].style.backgroundColor =="red" && 
+        gameBoardObject.gameBoard[5].style.backgroundColor =="red" &&
+        gameBoardObject.gameBoard[8].style.backgroundColor =="red")
 
 
         // Diagonal (2 ways) for player 1 to win:
         // Diagonal Way 1:
         ||
-        (gameBoardObject.gameBoard[0].style.background =="red" && 
-        gameBoardObject.gameBoard[4].style.background =="red" &&
-        gameBoardObject.gameBoard[8].style.background =="red")  
+        (gameBoardObject.gameBoard[0].style.backgroundColor =="red" && 
+        gameBoardObject.gameBoard[4].style.backgroundColor =="red" &&
+        gameBoardObject.gameBoard[8].style.backgroundColor =="red")  
         // Diagonal Way 2:
         ||
-        (gameBoardObject.gameBoard[2].style.background =="red" && 
-        gameBoardObject.gameBoard[4].style.background =="red" &&
-        gameBoardObject.gameBoard[6].style.background =="red")
+        (gameBoardObject.gameBoard[2].style.backgroundColor =="red" && 
+        gameBoardObject.gameBoard[4].style.backgroundColor =="red" &&
+        gameBoardObject.gameBoard[6].style.backgroundColor =="red")
 
       ){
         console.log("Player 1 wins!")
@@ -73,39 +73,39 @@ gameBoard: document.querySelectorAll(".putXorOHere") ,
 
       else if (
 
-        (gameBoardObject.gameBoard[0].style.background =="blue" && 
-        gameBoardObject.gameBoard[1].style.background =="blue" &&
-        gameBoardObject.gameBoard[2].style.background =="blue") 
+        (gameBoardObject.gameBoard[0].style.backgroundColor =="blue" && 
+        gameBoardObject.gameBoard[1].style.backgroundColor =="blue" &&
+        gameBoardObject.gameBoard[2].style.backgroundColor =="blue") 
         ||
-       (gameBoardObject.gameBoard[3].style.background =="blue" && 
-        gameBoardObject.gameBoard[4].style.background =="blue" &&
-        gameBoardObject.gameBoard[5].style.background =="blue") 
+       (gameBoardObject.gameBoard[3].style.backgroundColor =="blue" && 
+        gameBoardObject.gameBoard[4].style.backgroundColor =="blue" &&
+        gameBoardObject.gameBoard[5].style.backgroundColor =="blue") 
         ||
-        (gameBoardObject.gameBoard[6].style.background =="blue"&& 
-        gameBoardObject.gameBoard[7].style.background =="blue"&&
-        gameBoardObject.gameBoard[8].style.background =="blue")
+        (gameBoardObject.gameBoard[6].style.backgroundColor =="blue"&& 
+        gameBoardObject.gameBoard[7].style.backgroundColor =="blue"&&
+        gameBoardObject.gameBoard[8].style.backgroundColor =="blue")
 
         ||
-        (gameBoardObject.gameBoard[0].style.background =="blue" && 
-        gameBoardObject.gameBoard[3].style.background =="blue" &&
-        gameBoardObject.gameBoard[6].style.background =="blue")
+        (gameBoardObject.gameBoard[0].style.backgroundColor =="blue" && 
+        gameBoardObject.gameBoard[3].style.backgroundColor =="blue" &&
+        gameBoardObject.gameBoard[6].style.backgroundColor =="blue")
         ||
-        (gameBoardObject.gameBoard[1].style.background =="blue"  && 
-        gameBoardObject.gameBoard[4].style.background =="blue" &&
-        gameBoardObject.gameBoard[7].style.background =="blue")
+        (gameBoardObject.gameBoard[1].style.backgroundColor =="blue"  && 
+        gameBoardObject.gameBoard[4].style.backgroundColor =="blue" &&
+        gameBoardObject.gameBoard[7].style.backgroundColor =="blue")
         ||
-        (gameBoardObject.gameBoard[2].style.background =="blue" && 
-        gameBoardObject.gameBoard[5].style.background =="blue" &&
-        gameBoardObject.gameBoard[8].style.background =="blue")
+        (gameBoardObject.gameBoard[2].style.backgroundColor =="blue" && 
+        gameBoardObject.gameBoard[5].style.backgroundColor =="blue" &&
+        gameBoardObject.gameBoard[8].style.backgroundColor =="blue")
 
         ||
-        (gameBoardObject.gameBoard[0].style.background =="blue" && 
-        gameBoardObject.gameBoard[4].style.background =="blue" &&
-        gameBoardObject.gameBoard[8].style.background =="blue")  
+        (gameBoardObject.gameBoard[0].style.backgroundColor =="blue" && 
+        gameBoardObject.gameBoard[4].style.backgroundColor =="blue" &&
+        gameBoardObject.gameBoard[8].style.backgroundColor =="blue")  
         ||
-        (gameBoardObject.gameBoard[2].style.background =="blue" && 
-        gameBoardObject.gameBoard[4].style.background =="blue" &&
-        gameBoardObject.gameBoard[6].style.background =="blue")
+        (gameBoardObject.gameBoard[2].style.backgroundColor =="blue" && 
+        gameBoardObject.gameBoard[4].style.backgroundColor =="blue" &&
+        gameBoardObject.gameBoard[6].style.backgroundColor =="blue")
       ){
         console.log("Player 2 Wins!")
         // It should end the game, NOT next player's turn. 
@@ -129,7 +129,7 @@ gameBoard: document.querySelectorAll(".putXorOHere") ,
       console.log("Tie!")
     }
   }
-  ) ,
+   ,
 
 // Resetting the game (emptying the gameboard, setting to player 1's turn) 
 
@@ -176,6 +176,9 @@ const player1 = {
     }
   }
   }
+
+
+
 }
 
 // Attributes of player 2 object: Name, turn, and it can put an O on the board. 
