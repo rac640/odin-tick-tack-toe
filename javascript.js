@@ -158,30 +158,24 @@ gameboardReset: (function(){
 const player1 = {
   name: "playerOne",
   turn: true,
-  putAnX:
 
-  // Must target node List (gameBoardObject.gameBoard)
-
-
-  (function(boxNum){
+  // turned putAnX into a method
+  putAnX(boxNum){
     gameBoardObject.gameBoard[boxNum].onclick = ()=>{
       // if the gameboard is empty, then put the X. 
       // Also, if it's player1's turn, then put the X. and make player2 turn true. 
-    if (player1.turn == true && gameBoardObject.gameBoard[boxNum].style.background !=="red"){
+    if (player1.turn == true && gameBoardObject.gameBoard[boxNum].style.backgroundColor !=="red"){
       // The box that was clicked should turn red. 
-      gameBoardObject.gameBoard[boxNum].style.background="red"
+      gameBoardObject.gameBoard[boxNum].style.backgroundColor="red"
       // gameBoardObject.gameBoard[row][column] = "X";
       player1.turn = false;
       player2.turn = true;
       console.log("Player 2's turn now!");
       // After putting the X, check to see if anyone won. 
       gameBoardObject.outcomes()
-
     }
   }
-  
-  })
-
+  }
 }
 
 // Attributes of player 2 object: Name, turn, and it can put an O on the board. 
