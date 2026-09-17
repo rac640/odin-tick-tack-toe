@@ -164,7 +164,8 @@ const player1 = {
     gameBoardObject.gameBoard[boxNum].onclick = ()=>{
       // if the gameboard is empty, then put the X. 
       // Also, if it's player1's turn, then put the X. and make player2 turn true. 
-    if (player1.turn == true && gameBoardObject.gameBoard[boxNum].style.backgroundColor !=="red"){
+    if (player1.turn === true){
+      console.log("I work!");
       // The box that was clicked should turn red. 
       gameBoardObject.gameBoard[boxNum].style.backgroundColor="red"
       // gameBoardObject.gameBoard[row][column] = "X";
@@ -180,6 +181,13 @@ const player1 = {
 
 
 }
+
+
+// calling the putAnX function 
+
+for (let i = 0; i < gameBoardObject.gameBoard.length; i++ ){
+  player1.putAnX(i);
+};
 
 // Attributes of player 2 object: Name, turn, and it can put an O on the board. 
 const player2 = {
